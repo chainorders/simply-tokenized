@@ -1,12 +1,20 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "Node16",
     "target": "es2017",
     "strict": true,
     "sourceMap": true,
     "declaration": true,
     "resolveJsonModule": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node16"
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "jest.config.ts",
+    "babel.config.ts",
+  ],
 }
